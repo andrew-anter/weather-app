@@ -4,7 +4,7 @@ const $search = document.querySelector('input');
 const $messageOne = document.querySelector('#message-1')
 const $messageTwo = document.querySelector('#message-2')
 const $getLocationButton = document.querySelector('#get-location')
-const url = process.env.URL;
+const URL = process.env.URL;
 
 $getLocationButton.addEventListener('click', (e) => {
     e.preventDefault();
