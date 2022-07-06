@@ -4,7 +4,7 @@ const $search = document.querySelector('input');
 const $messageOne = document.querySelector('#message-1')
 const $messageTwo = document.querySelector('#message-2')
 const $getLocationButton = document.querySelector('#get-location')
-
+const url = process.env.URL;
 
 $getLocationButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ $getLocationButton.addEventListener('click', (e) => {
         $messageOne.textContent = 'Loading...';
         $messageTwo.textContent = '';
 
-        fetch(`http://localhost:3000/weather/location?latitude=${latitude}&longitude=${longitude}`).then((res) => {
+        fetch(`${URL}weather/location?latitude=${latitude}&longitude=${longitude}`).then((res) => {
         res.json().then((data) => {
             if (data.error) {
                 $messageOne.textContent = data.error;
@@ -44,7 +44,7 @@ $weatherForm.addEventListener('submit', (e) => {
     $messageOne.textContent = 'Loading...';
     $messageTwo.textContent = '';
 
-    fetch('http://localhost:3000/weather?address=' + location).then((res) => {
+    fetch('${URL}/weather?address=' + location).then((res) => {
         res.json().then((data) => {
             if (data.error) {
                 $messageOne.textContent = data.error;
