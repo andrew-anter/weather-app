@@ -21,3 +21,4 @@ a specific location or get the forecast data for your location
 ## Running from the Heroku server
 
 You can use this application from <a href="https://andrew-anter-weather-app.herokuapp.com/" target="_blank">Heroku Server</a> 
+
