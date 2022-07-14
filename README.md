@@ -20,4 +20,4 @@ a specific location or get the forecast data for your location
 ```
 ## Running from the Heroku server
 
-You can use this application from [heroku server](https://andrew-anter-node-v3-chat-app.herokuapp.com/) .
+You can use this application from [heroku server](https://andrew-anter-weather-app.herokuapp.com/) .
